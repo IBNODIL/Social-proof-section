@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  position: relative;
+  top: 0;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.bg-mobile{
+  z-index: -1;
+  visibility: hidden;
+  display: none;
+}
+
+.bg-desktop:nth-child(1){
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg-desktop:nth-child(2){
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 900px;
+}
+
+.texts{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.text h1{
+  font-size: 50px;
+  line-height: 50px;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 50px;
+}
+
+.text p{
+  color: hsl(303, 10%, 53%);
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.rates{
+  display: flex;
+  flex-direction: column;
+}
+
+.rate{
+  margin-top: 15px;
+  background-color: hsl(300, 24%, 96%);
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate:nth-child(2){
+  position: relative;
+  left: 40px;
+}
+
+.rate:nth-child(3){
+  position: relative;
+  left: 80px;
+}
+
+.cards{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card{
+  border-radius: 10px;
+  padding: 30px;
+  margin: 10px;
+  background-color: hsl(300, 43%, 22%);
+}
+
+.card:nth-child(2){
+  position: relative;
+  top: 20px;
+}
+
+.card:nth-child(3){
+  position: relative;
+  top: 40px;
+}
+
+.card-info{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-info img{
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.card-info div{
+  height: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-info h5{
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: white;
+}
+
+.card-info{
+  font-size: 12px;
+  color: hsl(333, 80%, 67%);
+}
+
+.card-text{
+  font-size: 12px;
+  color: white;
+  line-height: 17px;
+}
+
