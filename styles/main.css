@@ -99,6 +99,10 @@ body{
   left: 80px;
 }
 
+.rate h4{
+  color: hsl(300, 43%, 22%);
+}
+
 .cards{
   margin-top: 50px;
   display: flex;
@@ -159,3 +163,86 @@ body{
   line-height: 17px;
 }
 
+
+@media only screen and (max-width: 1080px){
+  body{
+    height: 200vh;
+  }
+  
+  .container{
+    width: 100%;
+  }
+
+  .texts{
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .text{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .text h1{
+    text-align: center;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .text p{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .rates{
+    align-items: center;
+  }
+
+  .rate{
+    left: 0px !important;
+    width: 90vw;
+    flex-direction: column;
+  }
+
+  .rate h4{
+    font-size: 15px;
+  }
+
+  .cards{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .card{
+    margin: 10px 20px;
+    top: 0px !important;
+  }
+
+  .bg-desktop{
+    z-index: -1;
+    visibility: hidden;
+    display: none;
+  }
+  
+  .bg-mobile{
+    visibility: visible !important;
+    display: block !important;
+    z-index: -1;
+    position: absolute;
+  }
+
+  #top{
+    top: 0;
+    left: 0;
+  }
+  
+  #bottom{
+    bottom: 0;
+    right: 0;
+  }
+}
